@@ -1,0 +1,41 @@
+<html>
+
+<head>
+
+<title>
+
+AngularJs ng-click Event Example
+
+</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<script type="text/javascript">
+
+var app = angular.module('ngclickApp', []);
+
+app.controller('ngclickCtrl', function ($scope) {
+
+$scope.clkcount = 0;
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<div ng-app="ngclickApp" ng-controller="ngclickCtrl">
+
+<h2>HAD</h2>
+
+<input type="button" style="cursor:pointer" value="Click Here" ng-click ="clkcount=clkcount+1" /><br /><br />
+
+<span style="color:Red">Number of Times you Clicked: {{clkcount}}</span>
+
+</div>
+
+</body>
+
+</html>
