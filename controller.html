@@ -1,0 +1,35 @@
+<html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body>
+
+<div ng-app="firstApp" ng-controller="firstCtrl">
+
+Initials: <input type="text" ng-model="Initials"><br>
+
+Middle Name: <input type="text" ng-model="middlename"><br>
+
+<br>
+
+Full Name: {{Initials + " " + middlename}}
+
+</div>
+
+<script>
+
+var app = angular.module('firstApp', []);
+
+app.controller('firstCtrl', function($scope) {
+
+$scope.Initials = "E";
+
+$scope.middlename = "Ari";
+
+});
+
+</script>
+
+</body>
+
+</html>
